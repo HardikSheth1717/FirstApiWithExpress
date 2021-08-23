@@ -16,7 +16,7 @@ module.exports.getUserDetails = (request, response, next) => {
         });
     }
 }
-
+ 
 module.exports.saveUser = (request, response, next) => {
     const postedData = request.body;
 

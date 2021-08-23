@@ -43,7 +43,7 @@ module.exports.saveUser = async (id, firstName, lastName, age, gender) => {
         return parseInt(data.affectedRows) > 0 ? parseInt(id) : 0;
     }
 }
-
+ 
 module.exports.deleteUser = async (id) => {
     const [data] = await mysqlPool.execute(`
         DELETE FROM users WHERE Id = ?`, [id]);

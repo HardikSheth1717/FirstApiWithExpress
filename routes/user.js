@@ -12,4 +12,4 @@ router.get('/saveuser', userController.saveUser);
 
 router.get('/deleteuser/:id', userController.deleteUser);
 
-module.exports = router;
+module.exports = router; 
