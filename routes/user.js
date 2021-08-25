@@ -8,8 +8,8 @@ router.get('/users', userController.getUserList);
 
 router.get('/userdetail/:id', userController.getUserDetails);
 
-router.get('/saveuser', userController.saveUser);
+router.post('/saveuser', userController.saveUser);
 
-router.get('/deleteuser/:id', userController.deleteUser);
+router.delete('/deleteuser/:id', userController.deleteUser);
 
-module.exports = router; 
+module.exports = router;
